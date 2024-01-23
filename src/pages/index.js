@@ -1,10 +1,6 @@
 import Link from "next/link";
-import { PhotoProvider, PhotoView } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
-
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-
 
 export default function Home() {
     const { systemTheme, theme, setTheme } = useTheme();
