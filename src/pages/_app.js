@@ -3,8 +3,6 @@ import Header from "../Components/Header";
 import "@/styles/globals.css";
 import "@/styles/header.css";
 import Footer from "@/Components/Footer";
-import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
-
 
 
 function MyApp({ Component, pageProps }) {
@@ -17,17 +15,6 @@ function MyApp({ Component, pageProps }) {
         <Header></Header>
         <Component {...pageProps} />
         <Footer></Footer>
-        <ScrollUpButton
-          StopPosition={0}
-          ShowAtPosition={150}
-          EasingType='easeOutCubic'
-          AnimationDuration={3000}
-          ContainerClassName='ScrollUpButton__Container'
-          TransitionClassName='ScrollUpButton__Toggled'
-          style={{}}
-          ToggledStyle={{}}
-          />
-       
       </ThemeProvider>
     </div>
   );
