@@ -49,6 +49,8 @@ export default function Home() {
 
         <div className="px-4 sm:16 bg-[#F2F2F2]  relative py-24">
         <img className="absolute w-[40px] h-[40px] right-5  sm:right-[35%] top-[60px] sm:top-[90px]" src="/Vector.png" alt="" />
+        <img className="absolute w-[30px] h-[30px] left-5  sm:left-[30%] top-[80px] sm:top-[110px]" src="/Vector.png" alt="" />
+
           <p className="text-center text-[20px] text-[#343D42] ">      
  Funeral Service Announcement</p>
           <h1 className="text-center text-[26px] sm:text-[40px] text-[#843E71] font-bold font-sofia">Mrs Keziah Akuchukwu Magulike</h1>
