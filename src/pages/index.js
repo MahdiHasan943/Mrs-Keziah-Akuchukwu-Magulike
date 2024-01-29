@@ -43,18 +43,20 @@ export default function Home() {
 
   return (
     <>
-      <div className="px-4 sm:16 py-4">
-        <img src="./Mum.png" className="sm:h-[480px] mx-auto sm:w-[600px]" alt="" />
+      <div className=" py-4">
+        <img src="./Mum.png" className="mx-auto" alt="" />
 
 
-        <div className="bg-[#F2F2F2] px-2 py-12">
-          <p className="text-center text-[20px] text-[#343D42]">Funeral Service Announcement</p>
+        <div className="px-4 sm:16 bg-[#F2F2F2]  relative py-24">
+        <img className="absolute w-[40px] h-[40px] right-5  sm:right-[35%] top-[60px] sm:top-[90px]" src="/Vector.png" alt="" />
+          <p className="text-center text-[20px] text-[#343D42] ">      
+ Funeral Service Announcement</p>
           <h1 className="text-center text-[26px] sm:text-[40px] text-[#843E71] font-bold font-sofia">Mrs Keziah Akuchukwu Magulike</h1>
           <p className="text-center text-[20px] text-[#343D42]">1940 - 2024</p>
         </div>
 
 
-        <div className="py-8 relative">
+        <div className="px-4 sm:16 py-8 relative">
           <img className="absolute sm:left-[10px] right-0 top-[20px]" src="/Vector.png" alt="" />
           <div className="">
           <h2 className="text-center text-[30px] sm:text-[40px] text-[#843E71] font-bold font-sofia">Funeral Arrangements</h2>
@@ -90,7 +92,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="max-w-[1500px] mx-auto">
+        <div className="px-4 sm:16 max-w-[1500px] mx-auto">
         <img className="w-full" src="/Screenshot_23.png" alt="" />
         </div>
         
@@ -99,45 +101,47 @@ export default function Home() {
         </div> */}
 
 
-        <div className="max-w-[1500px] py-10 mx-auto">
+        <div className="px-4 sm:16 max-w-[1500px] bg-[#F2F2F2] py-10 mx-auto">
 
           <form id="con" className="max-w-[700px] mx-auto" ref={form} onSubmit={sendEmail} action="">
             <h2 className="text-center text-[30px] py-2 sm:text-[40px] text-[#843E71] font-bold font-sofia">Condolence Register</h2>
-              <div className="pb-20">
-                <input
-                  type="text"
-                  className="placeholder:text-[#010101] border border-[black] text-[#010101] placeholder:text-[22px] py-8 px-6 rounded-xl w-full bg-white"
-                  placeholder="First & Last Name  *"
-                  name="user_name"
-                />
-                <input
-                  type="email"
-                  className="placeholder:text-[#010101] border border-[black] placeholder:text-[22px] text-[#010101] py-8 px-6 rounded-xl my-10 w-full bg-white"
-                  placeholder="Email Address *"
-                  name="user_email"
-              />
-                <input
-                  type="text"
-                  className="placeholder:text-[#010101] border border-[black] text-[#010101] placeholder:text-[22px] py-8 mb-10 px-6 rounded-xl w-full bg-white"
-                  placeholder="Phone Number"
-                  name="phone"
-                />
-                <textarea
-                  className="w-full px-6 border border-[black] placeholder:text-[#010101] text-[#010101] rounded-xl placeholder:text-[22px] py-6 bg-white"
-                  placeholder="Enter your condolence message here"
-                  name="message"
-                  id=""
-                  cols="30"
-                  rows="7"
-                ></textarea>
-                <div className="text-center pt-10">
-                  <input
-                    type="submit"
-                    value="Send it"
-                    className="text-white rounded-xl text-[20px] font-normal leading-[30px] bg-[#843E71] py-4  sm:py-10 px-10 w-[50%] "
+            <div className="pb-20">
+            <label className="text-[#063255] "  htmlFor="">First & Last Name   <span className="text-[red]">*</span></label>
+          <input
+            type="text"
+            className="placeholder:text-[#777] mt-2 mb-4 border border-[#fff] text-[#063255] placeholder:text-[16px] py-3 px-6 rounded-md  w-full bg-[#FFFFFF]"
+                name="user_name"
+                placeholder="Enter your full name"
                   />
-                </div>
-              </div>
+                                    <label className="text-[#063255] py-4"  htmlFor="">Email Address  <span className="text-[red]">*</span></label>
+
+          <input
+            type="email"
+            className="placeholder:text-[#777] mt-2 border border-[#fff] placeholder:text-[16px] text-[#063255] py-3 px-6 rounded-md  mb-4 w-full bg-[#FFFFFF]"
+                name="user_email"
+                placeholder="Enter your email address"
+                  />
+                                    <label className="text-[#063255] py-4"  htmlFor="">Phone Number <span className="text-[red]">*</span></label>
+
+          <input
+            type="text"
+            className="placeholder:text-[#777] mt-2 border border-[#fff] text-[#063255] placeholder:text-[16px] py-3 mb-4 px-6 rounded-md  w-full bg-[#FFFFFF]"
+                name="phone"
+                placeholder="Enter phone number"
+                  />
+                                    <label className="text-[#063255] py-4"  htmlFor="">Message   <span className="text-[red]">*</span></label>
+          <textarea
+            className="w-full mt-2 px-6 border border-[#fff] placeholder:text-[#777] text-[#063255] rounded-md placeholder:text-[16px] py-6 bg-[#FFFFFF]"
+            id=""
+            cols="30"
+                rows="4"
+                placeholder="Enter your condolence message here"
+          ></textarea>
+          <div className="">
+           <input type="submit"           className=" text-[#fff] bg-[#843E71] hover:bg-[#93377a] font-semibold text-[17px]   duration-200 delay-75 ease-linear  py-3 rounded-md px-8 my-4"
+ text="send"/>
+          </div>
+        </div>
             </form>
 
 

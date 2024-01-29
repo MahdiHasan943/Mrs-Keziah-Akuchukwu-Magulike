@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className=" mx-auto darkBg shadow-lg ">
       <ThemeProvider attribute="class">
-        <Header></Header>
+        {/* <Header></Header> */}
         <Component {...pageProps} />
         <Footer></Footer>
       </ThemeProvider>
